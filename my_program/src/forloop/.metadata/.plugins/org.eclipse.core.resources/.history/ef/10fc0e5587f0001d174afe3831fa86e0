@@ -1,0 +1,38 @@
+package withoutloop;
+
+public class Exam {
+	public static void main(String arg[])
+	{
+		Exam ob=new Exam();
+		ob.prime(149327);
+		ob.prime(17);
+		
+	}
+  
+	public void prime(int a) {
+		int reverse=0;
+		boolean flag =false;
+		for(int n=a;n>0;n/=10)
+		{
+			int digit=n%10;
+			reverse=reverse*10+digit;
+		}
+		for(int i=1;reverse/2>i;i++)
+		{
+			if(reverse%i==0)
+			{
+				flag=true;
+				break;
+				
+			}
+		}
+		if(flag==true)
+		{
+			System.out.println(a+" is a not prime number");
+		}
+		else
+		{
+			System.out.println(a+" is a prime number");
+		}
+	}
+}

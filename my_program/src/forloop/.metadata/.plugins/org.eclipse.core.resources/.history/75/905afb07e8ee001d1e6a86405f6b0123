@@ -1,0 +1,11 @@
+package inheritence;
+
+public class food extends Foodprice {
+
+public int discount(int num  )
+{
+   int avg=(num*10)/100;
+   int price=num-avg;
+   return price;
+}
+}

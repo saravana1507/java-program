@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Saravana_pattern.Sletter.java&apos; to &apos;E_letter.java&apos;&#x0A;- Original project: &apos;myprogram&apos;&#x0A;- Original element: &apos;Saravana_pattern.Sletter.java&apos;&#x0A;- Renamed element: &apos;Saravana_pattern.E_letter.java&apos;" description="Rename compilation unit &apos;Sletter.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Saravana_pattern{Sletter.java" name="E_letter.java" references="false" stamp="1684081906726" version="1.0"/>
+</session>

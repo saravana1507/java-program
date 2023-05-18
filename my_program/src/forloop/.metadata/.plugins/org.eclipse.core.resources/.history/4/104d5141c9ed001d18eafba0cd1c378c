@@ -1,0 +1,26 @@
+package forloop;
+
+public class Reverseprime_forloop {
+
+	public static void main(String[] args) {
+
+		Reverseprime_forloop obj = new Reverseprime_forloop();
+		obj.total(91);
+	}
+
+	public void total(int i) {
+		int reverse = 0;
+		for (; i > 0; i /= 10) {
+			int a = i % 10;
+			reverse = reverse * 10 + a;
+		}
+		for (; reverse > 0; reverse /= 2) {
+
+			if (reverse / 2 == 0) {
+				System.out.println(reverse + " is a not prime number");
+			} else {
+				System.out.println(i + " is a prime number");
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package withoutloop;
+
+public class First {
+      int atm=2312;
+     int bankbalance=23000;
+      int age=23;
+
+public void useinmoblie()
+{
+
+	System.out.println("mobile");
+}
+
+public void useinlaptop() {
+	System.out.println("dell");
+}
+}

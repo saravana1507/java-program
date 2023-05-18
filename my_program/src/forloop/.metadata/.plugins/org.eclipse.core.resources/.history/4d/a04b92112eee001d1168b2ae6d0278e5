@@ -1,0 +1,19 @@
+package forloop;
+
+public class Lcmnumber_forloop {
+	public static void main(String arg[]) {
+		Lcmnumber_forloop obj = new Lcmnumber_forloop();
+		obj.number(6, 15);
+	}
+
+	public void number(int a, int b) {
+		int lcm = 1;
+		int c = a > b ? a : b;
+		for (int i = 1; i < c; i++) {
+			if (c % i == 0) {
+			
+			}
+		}
+		System.out.println("lcm number =" + lcm);
+	}
+}

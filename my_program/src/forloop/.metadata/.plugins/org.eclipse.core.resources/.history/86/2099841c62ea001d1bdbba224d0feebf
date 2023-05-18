@@ -1,0 +1,13 @@
+package withoutloop;
+
+public class Swap {
+  public static void main(String arg[])
+  {
+	  int a=5;
+	  int b=9;
+	  int c=a+b-a;
+	  int d=a+b-b;
+	  System.out.println("a number is ="+c);
+	  System.out.println("a number is ="+d);
+  }
+}

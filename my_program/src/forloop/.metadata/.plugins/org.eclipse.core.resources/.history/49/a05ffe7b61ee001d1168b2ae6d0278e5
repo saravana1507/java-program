@@ -1,0 +1,17 @@
+package inheritence;
+
+public class Casio extends Calculator {
+
+	public static void main(String[] args) {
+		Calculator obj = new Calculator();
+		int number = obj.addition();
+		System.out.println("add total number is=  "+number);
+		int sub = obj.subraction();
+		System.out.println("subraction of number= "+sub);
+		int mul = obj.multipication();
+		System.out.println("multipication of number=  "+mul);
+		int div = obj.division();
+		System.out.println("divided of number = "+div);
+	}
+
+}

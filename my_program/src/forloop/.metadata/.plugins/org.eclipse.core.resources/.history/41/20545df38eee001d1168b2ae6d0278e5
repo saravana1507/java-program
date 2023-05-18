@@ -1,0 +1,18 @@
+package inheritence;
+
+public class Foodgst extends food {
+	public static void main(String arg[]) {
+		Foodgst obj=new Foodgst();
+        int total=				
+	}
+	public double gst( int final_amount)
+	   {
+	    double gstamt=5.2;
+	  double gst_amount= (final_amount*gstamt)/100;
+	    return gst_amount;
+	  }
+	   public void getamount( int final_amount,double gst_amount)
+	    {
+	    double totalamnt= final_amount+gst_amount;
+	       }
+}

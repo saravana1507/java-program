@@ -1,0 +1,17 @@
+package forloop;
+
+public class Hcfnumber_forloop {
+
+	public static void main(String agr[])
+	{
+		
+	}
+	public void number(int first,int second)
+	{
+		for(int small=first<second?first:second;small<second;small++)
+		{
+			if(small)
+		}
+		
+	}
+}

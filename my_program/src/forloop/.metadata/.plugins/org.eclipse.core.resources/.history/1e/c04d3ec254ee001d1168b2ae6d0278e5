@@ -1,0 +1,33 @@
+package forloop;
+
+public class Neon_forloop {
+
+	public static void main(String[] args) {
+	
+		
+	}
+	public void number(int n)
+	{
+		int rev=0;
+		for(int square=n*n;square>0;square/=10)
+		{
+			int a=square%10;
+			rev=rev*10+a;
+		}
+		int count=0;
+		for(int i=1;rev>i;rev/=10)
+		{
+			int b=rev%10;
+		   count=count+b;
+		}
+		if(n==count)
+		{
+		System.out.println(n+"="+count+"is a neon number");
+	}
+		else
+		{
+			System.out.println(n+"="+count+"is a not neon number");
+		}
+	}
+
+}

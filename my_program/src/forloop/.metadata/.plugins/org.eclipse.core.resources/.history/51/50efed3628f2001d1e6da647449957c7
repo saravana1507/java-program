@@ -1,0 +1,26 @@
+package withoutloop;
+
+ class First {
+    int atm=2312;
+   int bankbalance=23000;
+ int age=23;
+ public static void main(String agr[])
+ {
+	 First ob=new First();
+	 int tot=ob.useinmoblie();
+	 ob.useinlaptop(tot);
+ }
+
+    private int useinmoblie()
+{
+  int total=1+2;
+	System.out.println("mobile");
+	return total;
+}
+
+   private void useinlaptop(int total) {
+	   int sum=total/2;
+	System.out.println(sum);
+	
+}
+}

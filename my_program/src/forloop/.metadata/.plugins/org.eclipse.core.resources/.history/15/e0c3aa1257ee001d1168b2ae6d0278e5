@@ -1,0 +1,27 @@
+package forloop;
+
+public class Armstrong_forloop {
+
+	public static void main(String[] args) {
+		
+
+	}
+	public void total(int a)
+	{    int total=0;
+		for(int i=1;a>i;a/=10)
+		{
+			int  n=a%10;
+			int num= n*n*n;
+			total+=num;
+		}
+		if(a==total)
+		{
+			System.out.println(a+"is a armstrong number");
+		}
+		else
+		{
+			System.out.println(a+"is a not armstrong number");
+		}
+	}
+
+}

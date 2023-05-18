@@ -1,0 +1,14 @@
+package inheritence;
+
+public class food extends Foodprice {
+
+	public static void main(String[] args) {
+	  food obj=new food();
+	  System.out.println("food total price");
+	  int food= obj.food(120, 50, 60);
+	  System.out.println("drink total price");
+	  int drink=obj.drinks(30, 20, 15);
+
+	}
+
+}

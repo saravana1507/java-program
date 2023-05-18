@@ -1,0 +1,8 @@
+package polymorphism;
+
+public class Advance_calc extends Calc {
+public static void main(String arg[])
+{
+	Advance_calc 
+}
+}

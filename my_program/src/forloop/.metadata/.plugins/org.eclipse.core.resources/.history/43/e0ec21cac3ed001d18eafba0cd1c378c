@@ -1,0 +1,16 @@
+package forloop;
+
+public class Digitnumber_forloop {
+
+	public static void main(String[] args) {
+	 Digitnumber_forloop obj=new Digitnumber_forloop();
+
+	}
+ public void digit(int i)
+ {
+	 for(;i>0;i/=10)
+	 {
+		 
+	 }
+ }
+ }

@@ -1,0 +1,15 @@
+package dowhile_loop;
+
+public class Armstrong_dowhile {
+public static void main(String arg[])
+{
+	
+}
+public void armstrong(int a)
+{   int i=a;
+  int count=0;
+  do {
+	  int 
+  }
+}
+}

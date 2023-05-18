@@ -1,0 +1,12 @@
+package polymorphism;
+
+public class Advance_calc extends Calc {
+public static void main(String arg[])
+{
+	Advance_calc ob= new Advance_calc();
+	ob.addition(12, 32);
+	ob.addition(32, 42, 12);
+	ob.subraction(32, 12, 14);
+	ob.multipication(5, 12, 16);
+}
+}

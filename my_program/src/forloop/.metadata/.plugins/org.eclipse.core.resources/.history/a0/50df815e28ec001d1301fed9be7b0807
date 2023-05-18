@@ -1,0 +1,32 @@
+package loop;
+
+public class Primenumber {
+
+	public static void main(String[] args) {
+		Primenumber obj=new Primenumber();
+		obj.number();
+
+	}
+	public void number()
+	{
+		int number=1;
+		int count=0;
+		while(count<15)
+		{
+			int i=1;
+			int div=0;
+			while(number%i==0)
+			{
+				div++;
+				i++;
+			}
+			if(div==2)
+			{
+				System.out.println(number);
+				count++;
+			}
+		number++;	
+		}
+	}
+
+}

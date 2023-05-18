@@ -1,0 +1,15 @@
+package withoutloop;
+
+public class Bank {
+
+	public static void main(String[] args) {
+		Bank_detail ob=new Bank_detail();
+		ob.credit(500);
+		ob.credit(250);;
+		ob.debit(700);
+	   ob.check();
+	   ob.bal;
+
+	}
+
+}

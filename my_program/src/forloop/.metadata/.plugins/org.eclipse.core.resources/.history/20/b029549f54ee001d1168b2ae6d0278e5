@@ -1,0 +1,18 @@
+package forloop;
+
+public class Neon_forloop {
+
+	public static void main(String[] args) {
+	
+		
+	}
+	public void number(int n)
+	{
+		
+		for(int Square=n*n;Square>0;Square/=10)
+		{
+			
+		}
+	}
+
+}

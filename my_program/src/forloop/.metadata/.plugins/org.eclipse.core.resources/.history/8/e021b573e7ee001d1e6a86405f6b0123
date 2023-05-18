@@ -1,0 +1,19 @@
+package inheritence;
+
+public class food extends Foodprice {
+	public static void main(String arg[])
+	{
+		food ob= new food();
+		int a=ob.food(120, 50, 120);
+		int b=ob.drinks(20, 40, 20);
+		int total=ob.total(a,b);
+		System.out.println(total);
+	}
+
+public int discount(int num  )
+{
+   int avg=(num*10)/100;
+   int price=num-avg;
+   return price;
+}
+}

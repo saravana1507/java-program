@@ -1,0 +1,30 @@
+package inheritence;
+
+public class Foodgst extends food {
+	public static void main(String arg[]) {
+		Foodgst ob= new Foodgst();
+		System.out.println(" ------- HOTEL BILL -----"+"\n");
+		int a=ob.food(120, 50, 120);
+		int b=ob.drinks(20, 40, 20);
+		int total=ob.total(a,b);
+		int discount=ob.discount(total);
+		int d_total= ob.amount(total, discount);
+		float gsttotal= ob.gst(d_total);
+	   ob.getamount(d_total, gsttotal);
+		
+	}
+	public float gst( int final_amount)
+	   {
+	    int gstamt=6;
+	    System.out.println("gst percentage = 5%");
+	  float gst_amount= (final_amount*gstamt)/100;
+	  System.out.println("gst amount = Rs."+gst_amount+"\n");
+	    return gst_amount;
+	  }
+	   public void getamount( int final_amount,float gsttotal)
+	     {
+	   float totalamnt= final_amount+gsttotal;
+	    System.out.println("paid amount= Rs."+totalamnt);
+	   
+	       }
+}

@@ -1,0 +1,24 @@
+package withoutloop;
+
+public class Recursion {
+
+	public static void main(String[] args) {
+		Recursion obj=new Recursion();
+		obj.add(5);
+
+	}
+  void add(int n)
+	{
+		int i=4;
+		int c=n*i;
+		
+		if(i<=n)
+		{
+			System.out.println(c);
+		}
+		
+		add(c);
+		
+	}
+
+}

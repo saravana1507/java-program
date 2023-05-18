@@ -1,0 +1,17 @@
+package forloop;
+
+public class Fibonacci_forloop {
+public static void main(String arg[])
+{
+	Fibonacci_forloop obj= new Fibonacci_forloop();
+	obj.num(6);
+}
+public void num(int num)
+{    int count=1;
+	for(int i=1;i<=num;i++)
+	{
+		count=i++;
+	}
+	System.out.println("fibonacci number"+count);
+}
+}

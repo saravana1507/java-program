@@ -1,0 +1,33 @@
+package withoutloop;
+
+public class Palindrome_recursion {
+public static void main(String arg[])
+{
+	Palindrome_recursion obj=new Palindrome_recursion();
+	System.out.println("----- palindrome number-------");
+	int a=121;
+	int reverse=obj.palindrome(a);
+	
+	
+	
+}
+
+
+
+public int palindrome (int n)
+{  int revrse=0;
+	if (n==0) {
+		
+		return n;
+	}
+	if(revrse>n)
+	{
+		int num=n%10;
+		revrse=revrse*10+num;
+	}
+	
+	
+	return palindrome (n/10);   
+}
+
+}

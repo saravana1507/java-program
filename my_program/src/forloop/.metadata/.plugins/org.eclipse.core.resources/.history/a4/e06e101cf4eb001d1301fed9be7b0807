@@ -1,0 +1,25 @@
+package loop;
+
+public class Fibonacci
+  {
+ static void main(String[] args)
+     {
+		Fibonacci obj=new Fibonacci();
+		 obj.number();
+     }
+ public void number()
+    {
+	int first=0;
+	int second=1;
+	int count=1;
+	while(count<10)
+	{
+	int a=first+second;
+	System.out.println(a);
+	first=second;
+	second=a;
+	count++;
+	}
+ }
+
+}

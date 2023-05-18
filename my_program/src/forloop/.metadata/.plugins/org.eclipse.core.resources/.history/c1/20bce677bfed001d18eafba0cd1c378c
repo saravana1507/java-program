@@ -1,0 +1,19 @@
+package forloop;
+
+public class Reversenumber_forloop {
+
+	public static void main(String[] args) {
+	Reversenumber_forloop obj=new Reversenumber_forloop();
+	
+	}
+public void number()
+{ 
+	int reverse=0;
+	for(int i=154;i>0;i/=10)
+	{
+		int a=i%10;
+		reverse=reverse*10+a;
+	}
+	System.out.println(reverse);
+}
+}

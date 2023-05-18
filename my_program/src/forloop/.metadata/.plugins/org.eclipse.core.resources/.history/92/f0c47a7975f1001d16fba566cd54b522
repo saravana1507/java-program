@@ -1,0 +1,21 @@
+package dowhile_loop;
+
+public class Primenumber_dowhile {
+	public static void main(String arg[])
+	{
+		
+	}
+	public void prime(int a) {
+		int i=1;
+		int n=a;
+		int count=0;
+		do {
+			if(n%i==0)
+			{
+				count++;
+			}
+			i++;
+		}
+		while()
+	}
+}

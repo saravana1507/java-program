@@ -1,0 +1,10 @@
+package inheritence;
+
+public class food extends Foodprice {
+	  
+public int total(int food_total,int drinks_total)
+{
+	
+}
+
+}

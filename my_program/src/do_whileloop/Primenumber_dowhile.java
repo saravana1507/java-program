@@ -1,0 +1,28 @@
+package do_whileloop;
+
+public class Primenumber_dowhile {
+	public static void main(String arg[])
+	{
+		Primenumber_dowhile obj=new Primenumber_dowhile();
+		obj.prime(17);
+	}
+	public void prime(int a) {
+		int i=1;
+		int count=0;
+		do {
+			if(a%i==0)
+			{
+				count++;
+			}
+			i++;
+		}
+		while(a>i);
+		if(count==2)
+		{
+			System.out.println(a+" = is a prime number");
+		}
+		{
+			System.out.println(a+" = is not a prime number");
+		}
+	}
+}

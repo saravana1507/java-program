@@ -1,0 +1,27 @@
+package withoutloop;
+
+public class Sample {
+	int a=5;
+	void sample1()
+	{
+		a=a+5;
+		System.out.println(a);
+	}
+	void sample2()
+	{
+		a=a+6;
+		System.out.println(a);
+	}
+public static void main(String arg[])
+{
+	Sample ob=new Sample();
+	System.out.println(ob.a);
+	ob.sample1();
+	ob.sample2();
+	ob.a=25;
+	System.out.println(ob.a);
+	ob.sample1();
+	ob.sample2();
+	
+}
+}

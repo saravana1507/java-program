@@ -1,0 +1,26 @@
+package loop;
+
+public class Lcmnumber {
+
+	public static void main(String[] args) 
+	{
+	  Lcmnumber obj=new Lcmnumber();
+	   obj.number();
+	}
+	public void number()
+	{
+		int a=8;
+		int b=15;
+		int big=a>b?a:b;
+		while(true)
+		{
+			if(big%a==0 && big%b==0)
+			{
+				System.out.println(big);
+				 break;
+			}
+			big++;
+		}
+	}
+
+}

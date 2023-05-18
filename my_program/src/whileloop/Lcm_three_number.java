@@ -1,0 +1,26 @@
+package whileloop;
+
+public class Lcm_three_number {
+	public static void main(String[] args) 
+	{
+	  Lcm_three_number obj=new Lcm_three_number();
+	   obj.number(6,14,22);
+	   obj.number(6,5,10);
+	}
+	public void number(int a, int b,int c)
+	{
+		int big=a>b?a:b;
+		int bigger=big>c? big:c;
+		while(true)
+		{
+			if(bigger%a==0 && bigger%b==0 && bigger%c==0)
+			{
+				System.out.println("lcm number="+bigger);
+				 break;
+			}
+			bigger++;
+		}
+	}
+
+}
+

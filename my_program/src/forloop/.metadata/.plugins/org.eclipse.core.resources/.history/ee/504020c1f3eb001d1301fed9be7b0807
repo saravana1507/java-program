@@ -1,0 +1,19 @@
+package loop;
+
+public class Fibonacci {
+
+	public static void main(String[] args) {
+	int first=0;
+	int second=1;
+	int count=1;
+	while(count<10)
+	{
+	int a=first+second;
+	System.out.println(a);
+	first=second;
+	second=a;
+	count++;
+	}
+	}
+
+}

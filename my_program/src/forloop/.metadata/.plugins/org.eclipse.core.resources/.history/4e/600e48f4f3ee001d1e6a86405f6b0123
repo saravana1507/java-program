@@ -1,0 +1,12 @@
+package inheritence;
+
+public class food extends Foodprice {
+
+public int discount(int num  )
+{
+	System.out.println("discount = 10%"+"\n");
+   int avg=(num*10)/100;
+   System.out.println("discount to amount= Rs."+avg+"\n");
+   return avg;
+}
+}

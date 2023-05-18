@@ -1,0 +1,22 @@
+package forloop;
+
+public class Lcmnumberthree_forloop {
+
+	public static void main(String arg[])
+	{
+		
+	}
+	public void number(int a,int b, int c)
+	{ 
+		
+		int small=a>b?a:b;
+		for(int big=small>c?small:c;true;big++)
+		{
+			if(big%a==0&& big%b==0&&big%c==0)
+			{
+				System.out.println(big);
+				break;
+			}
+		}
+	}
+}

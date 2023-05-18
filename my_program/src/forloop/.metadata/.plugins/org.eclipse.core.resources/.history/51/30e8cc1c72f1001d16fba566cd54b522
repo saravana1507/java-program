@@ -1,0 +1,20 @@
+package dowhile_loop;
+
+public class Numbers {
+
+public static void main(String arg[])
+{
+	Numbers ob=new Numbers();
+	System.out.println("-----natural number------");
+	ob.natural(1);
+}
+
+public void natural(int a)
+{
+	do {
+		System.out.println(a);
+		a++;
+	}
+	while(a<11);
+}
+}

@@ -1,0 +1,25 @@
+package dowhile_loop;
+
+public class Armstrong_dowhile {
+public static void main(String arg[])
+{
+	
+}
+public void armstrong(int a)
+{   int b=a;
+     int c=a;
+	int count=0;
+	int total=
+	do {
+		int digit=b%10;
+		count++;
+		b/=10;
+	}while(b>0);
+do { 
+	 total=total*c;
+	 
+	count--;
+}while(count>0);
+
+}
+}
