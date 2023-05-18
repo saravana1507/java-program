@@ -1,40 +1,46 @@
 package encapsulation;
 
-public class Mobile {
+public class Mobile extends Mobileshop {
 	int mobile_price;
 	String mobile_name;
+	String old_mobile;
 
 	Mobile() {
-		System.out.println("price list notice");
+		System.out.println(" mobile price list notice");
+	}
+	Mobile(String old_mobile)
+	{
+		super(12);
+		this.old_mobile=old_mobile;
+		System.out.println("  OLD mobile = " + old_mobile +" exchanged");
+		
 	}
 
 	Mobile(int mobile_price, String mobile_name) {
-		this();
+		super(123,12);
 		this.mobile_name = mobile_name;
 		this.mobile_price = mobile_price;
-		System.out.println("mobile name = " + mobile_name);
-		System.out.println("mobile price = " + mobile_price);
-		
+		System.out.println("  mobile name = " + mobile_name);
+		System.out.println("  mobile price = " + mobile_price);
 		if (mobile_price <= 10000 && mobile_price >= 3000) {
-         System.out.println("offer one headphone");
+			System.out.println(" -- offer one headphone --");
 		}
 		if (mobile_price > 10000 && mobile_price <= 20000) {
-			System.out.println("offer one bluetooth");
+			System.out.println(" -- offer one bluetooth --");
 		}
 		if (mobile_price > 20000) {
-			System.out.println("offer one keypad mobile ");
+			System.out.println(" -- offer one keypad mobile --");
 		}
-	}
-
-	Mobile(int mobile_price, String mobile_name, String old_mobile) {
-		this(mobile_price, mobile_name);
-		System.out.println("OLD mobile = " + old_mobile);
-		System.out.println("extra one selfie stick");
 	}
 
 	static public void main(String arg[]) {
-		Mobile customer = new Mobile(14000, "samsung", "nokia");
 		System.out.println("-------------------------------");
-		Mobile customer1 = new Mobile(70000, "apple");
+		Mobile customer1 = new Mobile();
+		System.out.println("-------------------------------");
+		Mobile customer = new Mobile("vivo");
+		System.out.println("-------------------------------");
+		Mobile customer2 = new Mobile(14000, "samsung");
+		System.out.println("-------------------------------");
+		Mobile customer3 = new Mobile(74000, "apple");	
 	}
 }
