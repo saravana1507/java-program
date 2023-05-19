@@ -4,20 +4,27 @@ public class Mobile extends Mobileshop {
 	int mobile_price;
 	String mobile_name;
 	String old_mobile;
-
+final static String mobile_shop="poorvika";
+static void  offer()
+{   System.out.println("     "+mobile_shop);
+	System.out.println("limited offer");
+}
 	Mobile() {
+		//System.out.println("       "+mobile_shop);
 		System.out.println(" mobile price list notice");
 	}
 	Mobile(String old_mobile)
 	{
-		super(12);
+        this();
+        offer();
 		this.old_mobile=old_mobile;
 		System.out.println("  OLD mobile = " + old_mobile +" exchanged");
 		
 	}
 
 	Mobile(int mobile_price, String mobile_name) {
-		super(123,12);
+		
+		offer();
 		this.mobile_name = mobile_name;
 		this.mobile_price = mobile_price;
 		System.out.println("  mobile name = " + mobile_name);
@@ -34,6 +41,7 @@ public class Mobile extends Mobileshop {
 	}
 
 	static public void main(String arg[]) {
+		offer();
 		System.out.println("-------------------------------");
 		Mobile customer1 = new Mobile();
 		System.out.println("-------------------------------");

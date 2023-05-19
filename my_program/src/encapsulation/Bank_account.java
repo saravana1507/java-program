@@ -2,19 +2,16 @@ package encapsulation;
 
 // bank account using encapsulation and constructor
 public class Bank_account {
-	private String bankname;
+final static String bankname="STATE BANK OF INDIA";
 	private String name;
-	private String ifsc;
-	private String branch;
+	static String ifsc="Sbi000432";
+	static String branch="vedasandur";
 	private int atm_pin;
 	private int account_no;
 	private int bank_balance;
 
 	Bank_account() {
 		System.out.println("------------------------------------");
-		this.bankname = "STATE BANK OF INDIA";
-		this.ifsc = "SBI015";
-		this.branch = "chennai";
 		System.out.println("     "+ bankname + "\n"+"    ---------------------"+"\n" + "branch name = " + branch);
 		System.out.println("ifsc code = " + ifsc + "\n");
 	}
