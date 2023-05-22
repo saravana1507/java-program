@@ -11,3 +11,16 @@ public class Eb_calculator extends Eb_bill {
 	}
    
 }
+
+
+
+
+//output:
+//	
+//	--------EB BILL---------
+//	customer name =saravana
+//	customer id =12321
+//	current reading=200
+//	Enter the bill amount =Rs.225.0
+//	current reading=500
+//	Enter the bill amount =Rs.675.0
