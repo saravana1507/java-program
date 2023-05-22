@@ -6,4 +6,5 @@ public interface Eb {
 	void setName(String customer_name);
 	String getName(); 
 	void eb_bill(int current_reading);
+	void display();
 }
