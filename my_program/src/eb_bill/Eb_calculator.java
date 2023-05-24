@@ -1,13 +1,16 @@
 package eb_bill;
-
+import java.util.Scanner;
 public class Eb_calculator extends Eb_bill {
 
 	public static void main(String[] args) {
 	Eb customer=new Eb_bill(12321,"saravana");
-	customer.eb_bill(200);
-	customer.display();
-	customer.eb_bill(500);
-	customer.display();
+	Scanner s=new Scanner(System.in);
+	System.out.print("enter the current reading =");
+	int n= s.nextInt();
+	customer.eb_bill(n);
+	customer.display( );
+	s.close();
+
 	}
    
 }
