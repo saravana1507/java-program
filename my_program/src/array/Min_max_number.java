@@ -1,5 +1,5 @@
 package array;
-// input the number in array find the 
+// input the number in array find the maximum number and minimum number
 import java.util.Scanner;
 
 public class Min_max_number {

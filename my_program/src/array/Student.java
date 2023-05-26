@@ -1,4 +1,5 @@
 package array;
+
 // student age program. count the student age and input age and
 // total age and average  the program
 import java.util.Scanner;
