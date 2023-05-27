@@ -3,53 +3,28 @@ package array;
 import java.util.Scanner;
 
 public class Min_max_number {
-	int a[];
-	static int size;
-	static int number;
 
 	public static void main(String[] args) {
 		Min_max_number ob = new Min_max_number();
-		ob.size();
-		ob.number();
+		
+		Input.size();
+		Input.number();
 		ob.min();
 		ob.max();
 
 	}
-
-	void size() {
-		Scanner s = new Scanner(System.in);
-		System.out.println("enter the size number : ");
-		size = s.nextInt();
-		a = new int[size];
-		
-		  }
-		  
-		  void number() {
-		 
-		Scanner sc = new Scanner(System.in);
-		System.out.println("enter the number :");
-		for (int i = 0; i < a.length; i++) {
-			a[i] = sc.nextInt();
-
-		}
-		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i] + " ");
-		}
-
-	}
-
 	void min() {
-		int min = a[0];
-		for (int i = 0; i < a.length; i++) {
-			min = a[i] < min ? a[i] : min;
+		int min = Input.a[0];
+		for (int i = 0; i < Input.a.length; i++) {
+			min = Input.a[i] < min ? Input.a[i] : min;
 		}
 		System.out.println("\n \n minium number is " + min);
 	}
 
 	void max() {
-		int max = a[0];
-		for (int i = 0; i < a.length; i++) {
-			max = Math.max(a[i], max);
+		int max = Input.a[0];
+		for (int i = 0; i < Input.a.length; i++) {
+			max = Math.max(Input.a[i], max);
 		}
 		System.out.println("\n maximum number is " + max);
 
