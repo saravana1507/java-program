@@ -25,7 +25,7 @@ public class Split_number {
 		}
 		a = new int[count];
 		int index = count - 1;
-		for (int i = 0; i < num; num /= 10) {
+		for (int i = index; i < num; num /= 10) {
 			int s = num % 10;
 			a[index] = s;
 			index--;
