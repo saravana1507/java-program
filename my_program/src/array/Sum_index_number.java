@@ -1,38 +1,16 @@
 package array;
 import java.util.Scanner;; 
-public class Sum_index_number {
-    int a[];
-    int size;
+public class Sum_index_number extends Input{
+	
 	public static void main(String[] args) {
 		Sum_index_number ob=new Sum_index_number();
+		number();
 		ob.check();
-
-	}
-
-	void size()
-	{
-		Scanner s= new Scanner(System.in);
-		System.out.println("enter the size : ");
-		size=s.nextInt();
-		a=new int[size];
-	}
-	void num() {
-		Scanner s= new Scanner(System.in);
-		size();
-		System.out.println("enter the number");
-		for(int i=0;i<a.length;i++)
-		{
-			a[i]=s.nextInt();
-		}
-		for(int i=0;i<a.length;i++)
-		{
-			System.out.println( a[i]);
-		}
 	}
 	void check() {
-		num();
+	
 		Scanner s= new Scanner(System.in);
-		System.out.println("enter the sum number =");
+		System.out.println("\nenter the sum number =");
 		int check=s.nextInt();
 		int total=0;
 		boolean flag=false;
@@ -47,8 +25,7 @@ public class Sum_index_number {
 					System.out.println(i+" index element "+a[i]+" + "+j+" index element "+a[j]+" = "+check);
 				}
 			}
-		}
-		
+		}		
 		if(flag==false)
 		{
 			System.out.println(" not founded the element");
