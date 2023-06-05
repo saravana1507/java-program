@@ -3,7 +3,8 @@ package Student_mark;
 import java.util.Scanner;
 
 public abstract class Student implements State_student {
-	String name, dob, school, district, state, dept;
+	String name, dob, school, district, state;
+	String dept;
 	int num, std;
 	int tamil, english, math, science, social;
 	int physics, chemistry, biology, cs;
@@ -82,9 +83,6 @@ public abstract class Student implements State_student {
 		case 12: {
 			System.out.print("\nwhich department (biology/computer science/arts) =");
 			dept = s.nextLine();
-			if (dept != "biology" && dept != "computer science" && dept != "arts") {
-				System.out.println("please check department name");
-			}
 			switch (dept) {
 			case "biology": {
 				System.out.print("\nTamil mark =");
@@ -212,12 +210,13 @@ public abstract class Student implements State_student {
 				System.out.println("\n\n---student data stored---");
 				break;
 			}
-			}
-
-		}
-
-		}
-	}
+			  default: {
+				  System.out.println("please check department");
+				  break;
+				}
+		}}
+		
+		}}
 
 	public abstract void display();
 
