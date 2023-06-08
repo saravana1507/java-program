@@ -8,7 +8,9 @@ public class A_letter {
 
 	}
 public void pattern()
-{ int a=1;
+{ 
+	int a=1;
+	
 	for(int row=1;row<=4;row++)
 	{
 		for(int space=4;space>row;space--)
@@ -17,10 +19,12 @@ public void pattern()
 		}
 		for(int col=1;col<=a;col++)
 		{
-		
+		//if(row==col  )
 		System.out.print("*");
-		
+		if(col==a-2 ||col==row+1  && row%2==0)
+			System.out.print(" ");
 		}
+		
 		System.out.println();
 	a+=2;
 	}

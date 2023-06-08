@@ -4,8 +4,8 @@ public class Primeboolean_forloop {
 
 	public static void main(String[] args) {
         Primeboolean_forloop obj=new Primeboolean_forloop();
-        obj.numbers(18);
-        obj.numbers(17);
+     //   obj.numbers(18);
+        obj.numbers(5);
 	}
 public void numbers(int n) {
 	boolean flag=false;

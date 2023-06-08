@@ -6,6 +6,7 @@ public class jagged_array {
 
 	public static void main(String[] args) {
 		jagged_array ob = new jagged_array();
+		System.out.println(ob);
 		int a[][] = ob.jagged();
 		ob.jagged_sum_2array(a);
 	}
@@ -54,6 +55,7 @@ public class jagged_array {
 		c[0] = new int[2];
 		c[1] = new int[3];
 		c[2] = new int[1];
+	//	String name="sa";
 		for (int i = 0; i < c.length; i++) {
 			for (int j = 0; j < c[i].length; j++) {
 				c[i][j] = a[i][j] + b[i][j];
