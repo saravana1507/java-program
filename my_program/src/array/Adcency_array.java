@@ -11,7 +11,7 @@ public class Adcency_array extends Input {
 
 	}
 
-	void adcency() {
+	public void adcency() {
 		System.out.println("\nfind the number");
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
@@ -33,7 +33,7 @@ public class Adcency_array extends Input {
 				System.out.println("cannot found the number");
 			}
 		}
-
+    s.close();
 	}
 
 }

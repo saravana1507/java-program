@@ -33,5 +33,6 @@ public class Add_array_number extends Input {
 		for (int i = 0; i < b.length; i++) {
 			System.out.print(b[i] + " ");
 		}
+	s.close();
 	}
 }

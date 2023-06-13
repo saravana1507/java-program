@@ -34,7 +34,7 @@ public class Binery_search extends Input {
 		Scanner s = new Scanner(System.in);
 		System.out.println("\nfind the number");
 		int find = s.nextInt();
-		int last = size - 1;
+		int last = size ;
 		int first = 0;
 		int mid = (first + last) / 2;
 		while (first < last) {
@@ -42,11 +42,11 @@ public class Binery_search extends Input {
 				System.out.println(mid + " = index " + a[mid] + " = element founded");
 				break;
 			}
-			if (a[mid] < find) {
+			if (a[mid] <= find) {
 				first = mid + 1;
 				mid = (mid + last) / 2;
 			}
-			if (a[mid] > find) {
+			if (a[mid] >= find) {
 				last = mid - 1;
 				mid = (mid + first) / 2;
 			}

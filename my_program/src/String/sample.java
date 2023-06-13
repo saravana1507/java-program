@@ -11,9 +11,21 @@ public class sample {
  System.out.println(d);
  sample ob=new sample();
  ob.toString();
+ ob.number();
 	}
 public String toString() {
 	return"saravana";
 }
 
+public void number() {
+	String s="  app le  ";
+String s1=s.strip();
+String s2=s.stripLeading();
+String s3=s.stripTrailing();
+System.out.println(s1);
+System.out.println(s2);
+System.out.println(s3);
+s.contains(s3);
+s.contentEquals(s);
+}
 }
