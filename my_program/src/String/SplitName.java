@@ -9,8 +9,6 @@ public class SplitName {
 	}
 	public void name()
 	{     
-		            
-	     System.out.println(ar);
 		String a="apple";
 		for(int i=0;i<a.length();i++)
 		{
