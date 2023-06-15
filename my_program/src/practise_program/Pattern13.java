@@ -22,7 +22,7 @@ public class Pattern13 {
 			{
 				System.out.print("* ");
 			}
-		
+		    	 
 			System.out.println();
 		}
 		for(int i=1;i<=3;i++)

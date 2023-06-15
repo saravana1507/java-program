@@ -9,22 +9,21 @@ public class Increament_array_value {
 
 	public static void main(String[] args) {
 		Increament_array_value ob = new Increament_array_value();
-		ob.size();
-		ob.number();
+		Scanner s = new Scanner(System.in);
+		ob.size(s);
+		ob.number(s);
 		ob.increase();
 	}
 
-	void size() {
-		Scanner s = new Scanner(System.in);
+	void size(Scanner s ) {
+		
 		System.out.println("enter the size number : ");
 		size = s.nextInt();
 		a = new int[size];
 		b = new int[a.length];
 	}
 
-	void number() {
-
-		Scanner sc = new Scanner(System.in);
+	void number(Scanner sc ) {
 		System.out.println("enter the number :");
 		for (int i = 0; i < a.length; i++) {
 			a[i] = sc.nextInt();

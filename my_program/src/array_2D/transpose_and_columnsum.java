@@ -9,15 +9,16 @@ public class transpose_and_columnsum {
 
 	public static void main(String[] args) {
 		transpose_and_columnsum ob = new transpose_and_columnsum();
-		int a[][] = ob.display();
+		Scanner s = new Scanner(System.in);
+		int a[][] = ob.display(s);
 		ob.sum(a);
 		ob.transpose(a);
 		ob.transpose1(a);
 	}
 
 	// input the array value
-	int[][] display() {
-		Scanner s = new Scanner(System.in);
+	int[][] display(Scanner s) {
+		
 		System.out.println("\nenter the row value :");
 		int row = s.nextInt();
 		System.out.println("enter the column value :");

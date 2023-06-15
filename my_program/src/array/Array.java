@@ -7,12 +7,14 @@ public class Array {
 
 	 public static void main(String[] args) {
 	 Array ob=new Array();
-	 ob.aggregate();
+	 Scanner s=new Scanner(System.in);
+	 ob.aggregate(s);
 	 ob.rmv_duplicate();
+	 s.close();
 
 	 }
-	 public void aggregate() {
-	  Scanner s=new Scanner(System.in);
+	 public void aggregate( Scanner s) {
+	  
 	  System.out.println("Enter the Element");
 	 int size=s.nextInt();
 	 int arr[]=new int[size];

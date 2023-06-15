@@ -38,7 +38,6 @@ package encapsulation;
 
 		 public static void main(String arg[]) {
 		  Dfdf ob = new Dfdf(1234,12435,987);
-		  Dfdf ob1 = new Dfdf("SBI0085");
 		  ob.getATM_PIN();
 		  
 		 }

@@ -6,11 +6,11 @@ public class count_the_given_number_in_array {
 
 	public static void main(String[] args) {
 		count_the_given_number_in_array ob=new count_the_given_number_in_array();
-    ob.number();
-	}
-	void number() {
-		int count=0;
 		Scanner s = new Scanner(System.in);
+    ob.number(s);
+	}
+	void number(Scanner s) {
+		int count=0;
 		System.out.print(" enter the size number :");
 		int size = s.nextInt();
 		int num[] = new int[size];

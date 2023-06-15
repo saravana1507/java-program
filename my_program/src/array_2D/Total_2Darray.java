@@ -6,11 +6,12 @@ public class Total_2Darray {
 	public static void main(String arg[])
 	{
 		Total_2Darray ob=new Total_2Darray();
-		ob.sum();
-	}
-	void sum() 
-	{
 		Scanner s = new Scanner(System.in);
+		ob.sum(s);
+	}
+	void sum(Scanner s) 
+	{
+		
 		System.out.println("\nenter the row value :");
 		int row = s.nextInt();
 		System.out.println("enter the column value :");

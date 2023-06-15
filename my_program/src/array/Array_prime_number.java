@@ -8,23 +8,24 @@ public class Array_prime_number {
 
 	public static void main(String[] args) {
 		Array_prime_number ob = new Array_prime_number();
-		ob.size();
-		ob.num();
+		Scanner s = new Scanner(System.in);
+		ob.size(s);
+		ob.num(s);
 		int count = ob.check();
 		ob.prime(count);
+		s.close();
 	}
 
-	void size() {
-		Scanner s = new Scanner(System.in);
+	void size(Scanner s) {
+	
 		System.out.println("enter the size : ");
 		size = s.nextInt();
 		a = new int[size];
 	}
 
-	void num() {
-		Scanner s = new Scanner(System.in);
+	void num(Scanner s) {
 
-		System.out.println("ente the number");
+		System.out.println("enter the number");
 		for (int i = 0; i < a.length; i++) {
 			a[i] = s.nextInt();
 		}
@@ -67,5 +68,6 @@ public class Array_prime_number {
 		for (int i = 0; i < b.length; i++) {
 			System.out.print(b[i] + " ");
 		}
+		
 	}
 }

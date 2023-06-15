@@ -6,12 +6,13 @@ public class jagged_array {
 
 	public static void main(String[] args) {
 		jagged_array ob = new jagged_array();
-		System.out.println(ob);
-		int a[][] = ob.jagged();
-		ob.jagged_sum_2array(a);
-	}
-	public int[][] jagged() {
 		Scanner s = new Scanner(System.in);
+		System.out.println(ob);
+		int a[][] = ob.jagged(s);
+		ob.jagged_sum_2array(a,s);
+		s.close();	}
+	public int[][] jagged(Scanner s) {
+		
 		int a[][] = new int[3][];
 		a[0] = new int[2];
 		a[1] = new int[3];
@@ -32,8 +33,7 @@ public class jagged_array {
 		return a;
 	}
 
-	void jagged_sum_2array(int a[][]) {
-		Scanner s = new Scanner(System.in);
+	void jagged_sum_2array(int a[][],Scanner s) {
 		int b[][] = new int[3][];
 		b[0] = new int[2];
 		b[1] = new int[3];

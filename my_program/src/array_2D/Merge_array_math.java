@@ -7,16 +7,17 @@ public class Merge_array_math {
 
 	public static void main(String[] args) {
 	Merge_array_math ob=new Merge_array_math();
-	 int a[][]=ob.array1();
-	 int b[][]=ob.array2();
+	Scanner s = new Scanner(System.in);
+	 int a[][]=ob.array1(s);
+	 int b[][]=ob.array2(s);
 	 ob.sum(a, b);
 	 ob.sub(a, b);
 	 ob.mul(a, b);
 	}
 	// first 2-D insert value
-	int[][] array1() 
+	int[][] array1(Scanner s) 
 	{
-		Scanner s = new Scanner(System.in);
+		
 		System.out.println("\nenter the first row value :");
 		int row = s.nextInt();
 		System.out.println("enter the first column value :");
@@ -41,9 +42,8 @@ public class Merge_array_math {
 		return a;
 }
 	// second 2-D insert value
-	int[][] array2() 
+	int[][] array2(Scanner s) 
 	{
-		Scanner s = new Scanner(System.in);
 		System.out.println("\nenter the second row value :");
 		int row = s.nextInt();
 		System.out.println("enter the second column value :");

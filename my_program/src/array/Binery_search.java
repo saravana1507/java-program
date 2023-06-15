@@ -7,8 +7,9 @@ public class Binery_search extends Input {
 	public static void main(String[] args) {
 		number();
 		Binery_search ob = new Binery_search();
+		Scanner s = new Scanner(System.in);
 		ob.ascending();
-		ob.binery();
+		ob.binery(s);
 
 	}
 
@@ -30,8 +31,8 @@ public class Binery_search extends Input {
 
 	}
 
-	void binery() {
-		Scanner s = new Scanner(System.in);
+	void binery(Scanner s) {
+		
 		System.out.println("\nfind the number");
 		int find = s.nextInt();
 		int last = size ;

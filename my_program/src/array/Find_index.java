@@ -9,13 +9,14 @@ public class Find_index {
    int a[];
 	public static void main(String[] args) {
 	Find_index  ob=new Find_index();
-	ob.size();
-	ob.number();
+	Scanner s = new Scanner(System.in);
+	ob.size(s);
+	ob.number(s);
 	ob.find();
 
 	}
-	void size() {
-		Scanner s = new Scanner(System.in);
+	void size(Scanner s) {
+	
 		System.out.println("enter the size number : ");
 		size = s.nextInt();
 		a = new int[size];
@@ -23,8 +24,7 @@ public class Find_index {
 	   num=s.nextInt();
 	}
 		  
-	void number() {	 
-		Scanner sc = new Scanner(System.in);
+	void number(Scanner sc) {	 
 		System.out.println("enter the number :");
 		for (int i = 0; i < a.length; i++) {
 			a[i] = sc.nextInt();

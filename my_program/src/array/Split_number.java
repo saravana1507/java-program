@@ -7,12 +7,13 @@ public class Split_number {
 	int num;
 	public static void main(String[] args) {
 		Split_number ob = new Split_number();
-		ob.input();
+		Scanner s = new Scanner(System.in);
+		ob.input(s);
 		ob.split();
 	}
 
-	void input() {
-		Scanner s = new Scanner(System.in);
+	void input(Scanner s) {
+		
 		System.out.println("enter the number");
 		num = s.nextInt();
 	}

@@ -1,15 +1,16 @@
 package array;
 import java.util.Scanner;
-public class REmove_arreynum extends Input {
+public class Remove_arreynum extends Input {
 
 	public static void main(String[] args) {
 	number();
-	REmove_arreynum ob=new REmove_arreynum();
-	ob.remove();
+	Remove_arreynum ob=new Remove_arreynum();
+	Scanner s=new Scanner(System.in);
+	ob.remove(s);
 
 	}
-	void remove() {
-		Scanner s=new Scanner(System.in);
+	void remove(Scanner s) {
+		
 		System.out.println("\nremove the number");
 		int n=s.nextInt();
 		int temp=0;

@@ -3,6 +3,7 @@ package array;
 import java.util.Scanner;
 
 public class Adcency_array extends Input {
+	boolean flag = false;
 
 	public static void main(String[] args) {
 		Adcency_array ob = new Adcency_array();
@@ -14,8 +15,7 @@ public class Adcency_array extends Input {
 	public void adcency() {
 		System.out.println("\nfind the number");
 		Scanner s = new Scanner(System.in);
-		int n = s.nextInt();
-		boolean flag = false;
+		int n = s.nextInt();		
 		for (int i = 0; i < a.length; i++) {
 			if (a[i] == n && i != 0 && i != a.length - 1) {
 				flag = true;

@@ -5,11 +5,11 @@ int b[];
 	public static void main(String[] args) {
 		number();
 		remove_arrey_element ob=new remove_arrey_element();
-		ob.remove();
+		Scanner s= new Scanner(System.in);	
+		ob.remove(s);
 
 	}
-	void remove() {
-	Scanner s= new Scanner(System.in);	
+	void remove(Scanner s) {
 	System.out.println("\nhow many size remove:"); 
 	int n=s.nextInt();
 	System.out.println("choose the number : ");

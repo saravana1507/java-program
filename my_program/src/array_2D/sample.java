@@ -75,6 +75,7 @@ public class sample {
 			}
 			System.out.println();
 		}
+		s.close();
 	}
 
 	}

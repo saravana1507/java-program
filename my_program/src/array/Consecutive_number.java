@@ -6,12 +6,13 @@ public class Consecutive_number extends Input{
 	  
 		public static void main(String[] args) {
 			Consecutive_number ob=new Consecutive_number();
+			Scanner s= new Scanner(System.in);
 	      number();	
-			ob.check();
+			ob.check(s);
 
 		}
-		void check() {
-			Scanner s= new Scanner(System.in);
+		void check(Scanner s) {
+		
 			System.out.println("\nenter the sum number =");
 			int check=s.nextInt();
 			int total=0;

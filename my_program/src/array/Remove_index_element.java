@@ -7,11 +7,11 @@ public class Remove_index_element extends Input {
 	public static void main(String[] args) {
 		number();
 		Remove_index_element ob=new Remove_index_element();
-		ob.remove();
-	}
-	void remove() {
 		Scanner s=new Scanner(System.in);
-		System.out.println("\nremove the index number");
+		ob.remove(s);
+	}
+	void remove(Scanner s) {
+    	System.out.println("\nremove the index number");
 		int n=s.nextInt();
 		int temp=0;
 		int b[]=new int[a.length-1];
