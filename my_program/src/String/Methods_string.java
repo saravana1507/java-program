@@ -33,8 +33,10 @@ public class Methods_string{
 		String first="30";
 		String sec="16";
 		System.out.println(first.compareTo(sec));
-		
+		// contains method using for  type the letters present or not
+		// if present the letters true not present false
 		System.out.println(s.contains("ay"));
+		
 		
 	}
 }
