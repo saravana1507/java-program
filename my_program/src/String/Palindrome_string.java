@@ -18,13 +18,12 @@ public class Palindrome_string {
 			reverse=reverse+s.charAt(i);
 			
 		 }
-		 if(s==reverse)
+		 if(s.equals(reverse))
 		 {
 			 System.out.println(s+" is a polindrome");
 		 }
-			/*
-			 * else { System.out.println(s+" is a not polindrome "); }
-			 */
+		 else { System.out.println(s+" is a not polindrome "); }
+			
 	}
 
 }
