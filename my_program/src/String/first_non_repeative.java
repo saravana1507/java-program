@@ -19,7 +19,8 @@ public class first_non_repeative {
 				}
 			}
 			if (count > 1) {
-				System.out.println("first non repeat letter : " + s.charAt(i));
+				System.out.println("first non "
+						+ "repeat letter : " + s.charAt(i));
 				break;
 			}
 		}

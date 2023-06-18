@@ -16,12 +16,10 @@ public class Caps_first_string {
 				if (i == 0) {
 					System.out.print((char) (num - 32));
 				}
-				if (i > 0) {
-					System.out.print((char) num);
-				}
+				
 			}
 			if (num == 32) {
-				System.out.print((char) num);
+			
 				i = i + 1;
 				int num1 = s.codePointAt(i);
 				if (num1 < 97) {
@@ -31,6 +29,9 @@ public class Caps_first_string {
 					num1 = num1 - 32;
 					System.out.print((char) num1);
 				}
+			}
+			if (i > 0) {
+				System.out.print((char) num);
 			}
 
 		}

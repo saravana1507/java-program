@@ -1,6 +1,13 @@
 package String;
 
-import java.util.Locale;
+import java.util.Scanner;
+
+//every word first letter to change in capital letter
+
+//string sentence to split() used to split the sentence then assign string []
+
+//string [] first index small letter then change to capital letter 
+//if first letter capital not change to assigned
 
 public class Caps_first_letter_string {
 
@@ -11,28 +18,27 @@ public class Caps_first_letter_string {
 	}
 
 	public void letter() {
-		String s = "india is My country";
-		String letter[] = s.split(" ");
-		for (int i = 0; i < letter.length; i++) {
-			String a = letter[i];
-			for (int j = 0; j < a.length(); j++) {
-				if (j == 0) {
-					int num = a.charAt(0);
-					if (num < 97) {
-						System.out.print((char) num);
-					}
-					if (num > 97) {
-						num = num - 32;
-						System.out.print((char) num);
-					}
-				}
-				if (j > 0) {
-					System.out.print(a.charAt(j));
+
+		Scanner scan = new Scanner(System.in);
+		System.out.println("enter the sentence : ");
+		String s = scan.nextLine();
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(0) >= 97) {
+				char num = s.charAt(i);
+				char change = (char) (num - 32);
+				s = s.replace(num, change);
+
+			}
+			if (s.charAt(i) == ' ') {
+				i = i + 1;
+				if (((int) s.charAt(i) >= 97)) {
+					char num = s.charAt(i);
+					char change = (char) (num - 32);
+					s = s.replace(num, change);
 				}
 			}
-			System.out.println();
 		}
-
+		System.out.println("change the sentence :" + s);
 	}
 
 }
