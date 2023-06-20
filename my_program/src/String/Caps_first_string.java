@@ -1,4 +1,5 @@
 package String;
+
 // input the words to change  first letter captital
 public class Caps_first_string {
 
@@ -8,33 +9,37 @@ public class Caps_first_string {
 	}
 
 	public void number() {
-		String s = "india Is my country";
+		String s = " India Is my country";
+		String change = "";
 		for (int i = 0; i < s.length(); i++) {
 			int num = s.codePointAt(i);
 
-			if (num != 32) {
-				if (i == 0) {
-					System.out.print((char) (num - 32));
+			if (num != 32 && i == 0) {
+				if (num > 97) {
+					change = change + (char) (num - 32);
 				}
-				
-			}
-			if (num == 32) {
-			
+				if (num < 97) {
+					change = change + (char) (num);
+				}
+			} 
+			else if (num == 32) {
+
 				i = i + 1;
 				int num1 = s.codePointAt(i);
 				if (num1 < 97) {
-					System.out.print((char) num1);
+					change = change + " " + (char) num1;
 				}
 				if (num1 > 97) {
 					num1 = num1 - 32;
-					System.out.print((char) num1);
+					change = change + " " + (char) num1;
 				}
-			}
-			if (i > 0) {
-				System.out.print((char) num);
+			} 
+			else {
+				change = change + (char) num;
 			}
 
 		}
+		System.out.println("first letter caps"+change);
 	}
 
 }
