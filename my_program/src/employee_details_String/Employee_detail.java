@@ -1,5 +1,7 @@
 package employee_details_String;
 
+import java.util.Objects;
+
 import String.Company;
 
 public class Employee_detail {
@@ -62,6 +64,24 @@ public class Employee_detail {
 	public String toString() {
 		return "idnum=" + idnum + ", name=" + name + ", age=" + age + ", designation=" + designation + ", salary="
 				+ salary;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(age, designation, idnum, name, salary);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee_detail other = (Employee_detail) obj;
+		return age == other.age && Objects.equals(designation, other.designation) && idnum == other.idnum
+				&& Objects.equals(name, other.name) && salary == other.salary;
 	}
 
 }
