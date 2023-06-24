@@ -24,7 +24,6 @@ public class Employee_detail {
 	public int getIdnum() {
 		return idnum;
 	}
-
 	public void setIdnum(int idnum) {
 		this.idnum = idnum;
 	}

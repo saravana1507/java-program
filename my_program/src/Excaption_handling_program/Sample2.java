@@ -36,7 +36,6 @@ public class Sample2 {
 	    {
 	    	letter();
 	    }
-	    
 	}
 
 	public void letter()
