@@ -1,8 +1,8 @@
 package Collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.ListIterator;
 
 public class Reverse_list {
 
@@ -15,7 +15,7 @@ public class Reverse_list {
 	     name.add("lajeem");
 	     name.add("mahadevan");
 	     System.out.println(name);
-	    //ListIterator reverse= name.listIterator();
+	    // using normal method to reverse
 	    for(int i=0;i<name.size();i++)
 	    {
 	    	for(int j=i+1;j<name.size();j++)
@@ -25,8 +25,12 @@ public class Reverse_list {
 	    		name.set(j,temp);
 	    	}
 	    }
-	    System.out.println("REVERSE THE LIST");
-	    System.out.println(name);
+	    System.out.println("REVERSE THE LIST\n");
+	    System.out.println(name+"\n");
+	    //list method using to reverse
+	         Collections.reverse(name);
+	         System.out.println(name);
 	}
+	
 
 }
