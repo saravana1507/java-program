@@ -10,8 +10,9 @@ public class Mobile {
   private int capacity;
   private String colour;
   private int price;
+  private long imei;
   
-public Mobile(String name, String model, int year, String ram, int capacity, String colour, int price) {
+public Mobile(String name, String model, int year, String ram, int capacity, String colour, int price, int imei) {
 	super();
 	this.name = name;
 	this.model = model;
@@ -20,6 +21,7 @@ public Mobile(String name, String model, int year, String ram, int capacity, Str
 	this.capacity = capacity;
 	this.colour = colour;
 	this.price = price;
+	this.imei=imei;
 }
 
 public String getName() {
@@ -78,13 +80,33 @@ public void setPrice(int price) {
 	this.price = price;
 }
 
+public int getImei() {
+	return price;
+}
+
+public void setImei(int imei) {
+	this.imei = imei;
+}
+
 public int hashCode() {
-	return Objects.hash(capacity, colour, model, name, price, ram, year)*12342*12;
+	return Objects.hash(capacity, colour, imei, model, name, price, ram, year);
 }
 
 public String toString() {
 	return "Mobile name=" + name + ", model=" + model + ", year=" + year + ", ram=" + ram + ", capacity=" + capacity
-			+ ", colour=" + colour + ", price=" + price ;
+			+ ", colour=" + colour + ", price=" + price+",imei="+imei ;
+}
+
+public boolean equals(Object obj) {
+	if (this == obj)
+		return true;
+	if (obj == null)
+		return false;
+	if (getClass() != obj.getClass())
+		return false;
+	Mobile other = (Mobile) obj;
+	return  imei == other.imei;
+		
 }
   
 

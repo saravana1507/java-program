@@ -11,7 +11,7 @@ public class InputFile {
 	public static void main(String[] args) throws IOException {
 		File n = new File("/home/saravana/Desktop/new.txt");
 		DataInputStream in = new DataInputStream(System.in);
-		FileOutputStream na = new FileOutputStream(n);
+		FileOutputStream na = new FileOutputStream(n,true);
 		BufferedOutputStream bos = new BufferedOutputStream(na);
        System.out.println("enter the text");
          
@@ -19,7 +19,7 @@ public class InputFile {
        while((c=in.read())!='%')
        {
             bos.write(c);       }
-	
+	bos.close();
 	}
 
 }
