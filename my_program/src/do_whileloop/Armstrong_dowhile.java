@@ -1,8 +1,10 @@
 package do_whileloop;
 
 public class Armstrong_dowhile {
-public static void main(String arg[])
-{
+
+	public static void main(String arg[])
+
+	{
 	Armstrong_dowhile ob=new Armstrong_dowhile();
 	ob.armstrong(153);
 	ob.armstrong(154);

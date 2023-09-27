@@ -3,7 +3,7 @@ package forloop;
 public class Lcmnumber_forloop {
 	public static void main(String arg[]) {
 		Lcmnumber_forloop obj = new Lcmnumber_forloop();
-		obj.number(6, 15);
+		obj.number(12, 34);
 		obj.number(8,17);
 	}
 

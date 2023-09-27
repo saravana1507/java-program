@@ -73,7 +73,7 @@ public class Maths {
 	}
 
 	public void square() {
-		System.out.println("sqrt(36) double square num =" + Math.sqrt(36));
+		System.out.println("sqrt(36) double square num =" + Math.sqrt(35));
 	}
 
 	public void cube() {

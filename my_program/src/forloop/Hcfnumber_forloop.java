@@ -5,11 +5,12 @@ public class Hcfnumber_forloop {
 	public static void main(String agr[])
 	{
 	Hcfnumber_forloop obj=new Hcfnumber_forloop();
-	obj.number(6, 18);
+	obj.number(12, 34);
 	}
 	public void number(int first,int second)
 	{   int hcf=0;
-		int small=first<second?second:first;
+		int small=first>second?second:first;
+		System.out.println(small);
 		for(int i=1;small>i;i++)
 		{
 			if(first%i==0 && second%i==0)

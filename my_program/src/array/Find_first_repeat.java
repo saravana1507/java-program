@@ -19,9 +19,6 @@ public class Find_first_repeat {
 					flag = true;
 					break;
 				}
-				if (flag == true) {
-					break;
-				}
 			}
 			if (flag == false && i == Input.a.length - 1) {
 				System.out.println("\nno repeated elements");

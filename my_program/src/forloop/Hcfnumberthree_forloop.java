@@ -9,8 +9,11 @@ public class Hcfnumberthree_forloop {
 
 	public void number1(int first, int second, int third) {
 		int hcf = 0;
-		int num = first < second ? second : first;
+		int num = first > second ? second : first;
+		System.out.println(num);
 		int small = num > third ? third : num;
+		System.out.println(small);
+
 		for (int i = 1; small> i; i++) {
 			if (first % i == 0 && second % i == 0 && third % i == 0) {
 				hcf = i;
